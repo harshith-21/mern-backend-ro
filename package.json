@@ -70,7 +70,7 @@
     "webpack": "webpack",
     "buildserver": "babel ./server/fullserver.ts -d dist",
     "trystart": "npm run webpack && npm run tempbuild",
-    "start": "npm run webpack && nodemon --exec babel-node -- bin/www",
+    "start": "node ./lib/fullserver.js",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
